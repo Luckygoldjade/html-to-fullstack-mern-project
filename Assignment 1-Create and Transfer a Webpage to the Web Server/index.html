@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tony Chan</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <h1>Tony Chan</h1>
+    <h2>Web Dev Concepts</h2>
+    <p>
+        <!--Explain what index means as it relates to websites and servers-->
+        When a client goes to a webpage, index.html is the page the server will send back to show the client. 
+        The index.html file is the name of the resource on the server. As a convention, most web servers are 
+        configured so that the request for / is mapped to the file at the path /index.html. This file is 
+        called the designated homepage on the web server. In almost all real-world web applications, the 
+        file index.html in the root directory is called the home page of the web application, and the web 
+        application is configured to return this file whenever a GET request receives the URL. Index.html 
+        is the default name for a home page of a website hosted on an Apache web server.
+    </p>
+    <p>
+        <!--Explain what you see in the browser's Web Dev/Inspector tools. What is different about the file's 
+        details on the web server versus the local computer?-->
+        The web server version takes more than twice the amount of time to access than the local computer 
+        version. The web server version uses the same index.html as the local computer, but the web server  
+        version runs a JavaScript called executor.js and uses favicon.ico for making a custom browser tab icon. 
+        The browser tab and contents for both web server and local computer shows my name, Tony Chan, and same 
+        contents. The HTTP request lines for the two versions are similar, except for the URL paths. Both have 
+        the GET request method and the same successful request response of 200. The web server version has 
+        an IP address for finding the target web server, but the local computer version does not. The request 
+        header for the web server version shows the client can handle text/html, English and encoding types. 
+        The local computer request header references Chrome, which can do the same things. The request method 
+        is GET, which means the request header body will be empty. No document is being requested. The HTTP 
+        response are different for the two versions. In this example, no separate server is invoked. 
+        The request is just for a static index.html file, which is sent back to the client. The local computer 
+        version has minimal response header content. The web server version has more response header content 
+        and the content type is specified as test/html. The web server version has to access a server far away 
+        and more information is needed. A TCP/IP connection needs to be opened to the web server. The response 
+        header has connection set to keep alive and uses an Apache server program. The response header body 
+        is the index.html file at the web server address, which is sent back to the client. 
+    </p>
+    <p>
+        <!--Explain why the favicon.ico file has a status 200, but the main.css and main.js files do not.-->
+        The response status for favicon.ico is 200, which means the HTTP request was successfully processed 
+        by the server. The files main.css and main.js do not have a response status code and are showing 
+        errors. The browser inspection tool indicates the main.css and main.js files do not exist and are 
+        generating an error for each. The line of code with command link is looking for these two files. 
+        After I create these two files in the same directory as index.html, the errors are eliminated and 
+        the response status code is 200 for each file. 
+    </p>
+    <p>
+        <!--Explain the parts of the URL to your web file. What are the scheme, subdomain, host domain, and 
+        resources?-->
+        The URL to my web file is a unique identifier. The scheme in my web file is HTTPS. A URL starts with 
+        a scheme which identifies the protocol the web client must use to request the resource. A subdomain 
+        is a subsection of that domain/server. Its name is appended to the front of the domain name. In my 
+        web file, the subdomains are “web” and “engr.” The domain name is mapped to the IP address for that 
+        server machine. In my web file, the domain name is oregonstate.edu. The resource in my web file URL 
+        is index.html and the resource path is ~chanto/a1-chanto/.
+    </p>
+
+</body>
+</html>
