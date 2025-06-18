@@ -87,6 +87,7 @@ Note: If you see any errors, make sure you are in the html-to-fullstack-mern-pro
 
 ## Screenshots of Progress in Assignment Stages
 [Assignment stage 1 (PNG)](docs/screenshots/assign_1.png)
+[Assignment stage 2 (PNG)](docs/screenshots/assign_2.png)
 
 ## PDF Report
 [Final Report (PDF)](docs/_____.pdf)
