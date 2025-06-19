@@ -43,7 +43,15 @@ Designed for hands-on learning with clean separation of concerns between fronten
 Download the Project
 Open a terminal (Command Prompt or PowerShell on Windows).
 Copy and paste this command to download the project:
-git clone Fix***
+git clone https://github.com/Luckygoldjade/html-to-fullstack-mern-project.git
+
+(Optional) Make sure you have the latest files:
+git pull origin main
+
+Install Requirements
+Make sure you have Node.js installed.
+In the terminal, install the project dependencies:
+npm install
 
 Two terminals will be open to run app.
 Go into the project folder:
@@ -53,14 +61,6 @@ Open a terminal (Command Prompt or PowerShell on Windows). Terminal left.
 Go into the project folder:
 cd html-to-fullstack-mern-project/backend
 Open a terminal (Command Prompt or PowerShell on Windows). Terminal right.
-
-(Optional) Make sure you have the latest files:
-git pull origin main
-
-Install Requirements
-Make sure you have Node.js installed.
-In the terminal, install the project dependencies:
-npm install
 
 Start the App
 In the left terminal, start the server: javascript side
@@ -85,8 +85,9 @@ https://localhost:8000
 
 Note: If you see any errors, make sure you are in the html-to-fullstack-mern-project folder and that Node.js is installed.
 
-## Screenshots
+## Screenshots of Progress in Assignment Stages
 [Assignment stage 1 (PNG)](docs/screenshots/assign_1.png)
+[Assignment stage 2 (PNG)](docs/screenshots/assign_2.png)
 
 ## PDF Report
 [Final Report (PDF)](docs/_____.pdf)
@@ -109,7 +110,7 @@ Improved ability to debug and visualize data using tools like console.table() in
 
 Strengthened skills in using npm scripts for running, building, and testing applications.
 
-Learned how to simulate a real-world data flow from MongoDB cluster → REST API → React component.
+Learned how to simulate a real-world data flow from MongoDB cluster to REST API to React component.
 
 
 
