@@ -66,16 +66,14 @@ Start the App
 In the left terminal, start the server: javascript side
 node App.js
 
-In the right terminal, start the server: react side
-node ____.mjs
-Fix***
-
-
-
 View the frontend website
 Open your web browser and go to:
 Fix***
 https://localhost:3000
+
+In the right terminal, start the server: react side
+node ____.mjs
+Fix***
 
 View the backend website
 Open your web browser and go to:
@@ -88,6 +86,8 @@ Note: If you see any errors, make sure you are in the html-to-fullstack-mern-pro
 ## Screenshots of Progress in Assignment Stages
 [Assignment stage 1 (PNG)](docs/screenshots/assign_1.png)
 [Assignment stage 2 (PNG)](docs/screenshots/assign_2.png)
+[Assignment stage 3_1 (PNG)](docs/screenshots/assign_3_1.png)
+[Assignment stage 3_2 (PNG)](docs/screenshots/assign_3_2.png)
 
 ## PDF Report
 [Final Report (PDF)](docs/_____.pdf)
