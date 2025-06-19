@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tony Chan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <header>
+    <h1>Tony Chan</h1>
+    </header>
+
+    <nav class="global">
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="gallery.html">Gallery</a>
+    </nav>
+
+    <main>
+
+    <section>
+    <h2>Contact</h2>
+    <article>
+    <p>
+      Let me know what you think about our website. Please fill out the form below to contact me. Start at the top and click through the form. Name, email, and comments are required.
+    </p>
+
+
+    <!-- The action attribute refers to a script file, or to a route for the data. The method refers to a GET or POST request. --> 
+    <form action="/results" method="POST" class="sideByside">
+        
+        <fieldset>
+          
+            <!-- Required questions for this legend -->
+            <legend>Add your Name, Email and remarks</legend>
+
+            <!-- It is best practice to require the user's name. -->
+            <label for="firstlast" class="required">First and Last Name</label>
+                  <input type="text" 
+                  name="firstlast" 
+                  id="firstlast" 
+                  size="30" 
+                  maxlength="100" 
+                  required placeholder="First and last name" 
+                  autofocus/>
+            
+            <!-- Require the email, so you can respond to the user. 
+                 Use the pattern attribute with a regular expression to check for the correct format. -->
+              <label for="email" class="required">Email</label>
+                  <input type="email" 
+                    name="email" id="email" 
+                    size="30" maxlength="100" 
+                    required 
+                    pattern="[^ @]+@[^ @]+.[a-z]+"
+                    placeholder="name@host.com"/>
+        
+          <!-- Set limits for this box to help avoid script injections. -->
+            <label for="remarks" class="required">What else would you like to tell us?</label>
+            <textarea name="remarks" 
+            id="remarks" 
+            minlenth="3" 
+            maxlenth="250" 
+            rows="5"
+            cols="35"
+            required placeholder="Write 250 characters or less."></textarea>
+          </fieldset>
+
+        <!-- Not required questions for this legend--> 
+        <fieldset>
+            <legend>How was your visit?</legend>
+
+            <!-- Notice how the options are nested inside the select tag and use the value attribute and the most obvious choice is already selected. -->
+            <label for="how">How do you rate us?</label>
+                <select name="stars" id="how">
+                    <option value="1 star">1 star</option>
+                    <option value="2 stars">2 stars</option>
+                    <option value="3 stars">3 stars</option>
+                    <option value="4 stars">4 stars</option>
+                    <option value="5 stars" selected>5 stars</option>
+                </select>
+
+            <!-- Notice how the radio group name is the same for each input. -->
+              <p>Would you like to work here?</p>
+                <label for="yes">
+                  <input type="radio" name="work" id="yes" value="Yes">
+                  Yes Way</label>
+                <label for="no">
+                  <input type="radio" name="work" id="no" value="No">
+                  No Way</label>
+                <label for="maybe">
+                  <input type="radio" name="work" id="maybe" value="Maybe">
+                  Maybe Way</label>
+
+            <p>What are your interests?</p>
+              <label for="cars">
+                <input type="checkbox" 
+                name="interests"
+                id="cars"
+                value="cars"/>Cars
+            </label>
+
+              <label for="music">
+                  <input type="checkbox" 
+                  name="interests" 
+                  id="music"
+                  value="music"/>Music
+              </label>
+
+              <label for="other">
+                  <input type="checkbox" 
+                  name="interests" 
+                  id="other"
+                  value="other"
+                  checked/>Other
+              </label>
+
+          <!-- Use the button element to send the data -->
+            <button type="submit">Submit review</button>
+    
+          <!-- or the input element, with the correct type and value 
+            <input type="submit" value="Submit review" />  -->
+        </fieldset>
+    </form>
+    </article>
+</section>
+
+
+
+
+</main>
+
+    <footer>
+        <p>
+        &copy; 2023 Tony Chan
+        </p>
+    </footer>
+
+
+
+</body>
+</html>

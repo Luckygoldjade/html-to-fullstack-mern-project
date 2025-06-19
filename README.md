@@ -39,7 +39,7 @@ Designed for hands-on learning with clean separation of concerns between fronten
 - Backend: Node.js with Express, REST API
 - Database: MongoDB, Mongoose, No SQL
 
-## Setup Instructions for Assign 8 stage
+## Setup Instructions
 Download the Project
 Open a terminal (Command Prompt or PowerShell on Windows).
 Copy and paste this command to download the project:
@@ -48,11 +48,44 @@ git clone https://github.com/Luckygoldjade/html-to-fullstack-mern-project.git
 (Optional) Make sure you have the latest files:
 git pull origin main
 
-Install Requirements
-Make sure you have Node.js installed.
-In the terminal, install the project dependencies:
+--
+Assignment 4: Installation and Running Instructions
+Important
+Do not delete or replace the existing package.json file.
+It already contains all the necessary settings and dependencies for this project.
+
+Requirements
+Make sure you have Node.js installed on your computer.
+
+Steps
+1. Open the project folder
+In VS Code or your file explorer, open the folder named:
+Assignment 4-Process Contact Form Data
+
+2. Open a terminal
+In VS Code: Go to Terminal > New Terminal
+Or use Command Prompt / PowerShell in Windows
+
+3. Install all dependencies
+Run this command in the terminal (this will use the existing package.json):
 npm install
 
+This will install everything needed, including express and nodemon.
+
+4. Start the app
+Run:
+npm start
+
+The app will start, and you can view it in your browser at:
+http://localhost:3000
+
+Note:
+
+Do not run npm init or delete/replace package.json.
+Just use the provided package.json and follow the steps above.
+
+--
+Assignment 8
 Two terminals will be open to run app.
 Go into the project folder:
 cd html-to-fullstack-mern-project/frontend
@@ -88,6 +121,9 @@ Note: If you see any errors, make sure you are in the html-to-fullstack-mern-pro
 [Assignment stage 2 (PNG)](docs/screenshots/assign_2.png)
 [Assignment stage 3_1 (PNG)](docs/screenshots/assign_3_1.png)
 [Assignment stage 3_2 (PNG)](docs/screenshots/assign_3_2.png)
+[Assignment stage 4_1 (PNG)](docs/screenshots/assign_4_1.png)
+[Assignment stage 4_2 (PNG)](docs/screenshots/assign_4_2.png)
+[Assignment stage 4_3 (PNG)](docs/screenshots/assign_4_3.png)
 
 ## PDF Report
 [Final Report (PDF)](docs/_____.pdf)
