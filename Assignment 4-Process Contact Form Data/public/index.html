@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Tony Chan Assignment 3</title>
+
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <header>
+    <h1>Tony Chan</h1>
+    </header>
+        <nav class="global">
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact</a>
+            <a href="gallery.html">Gallery</a>
+        </nav>
+    
+    <main>
+
+    <section>
+    <h2>Web Development Concepts</h2>
+    <nav class="local">
+        <a href="#servers">Web Servers</a>
+        <a href="#frontend">Frontend Design</a>
+        <a href="#images">Optimized Images</a>
+        <a href="#css">Cascading Stylesheets</a>
+        <a href="#forms">Forms</a>
+        <a href="#express">Express</a>
+    </nav>
+    <article id="servers">
+    <h3>
+        Web Servers
+    </h3>
+
+    <p>
+        <!--Explain what index means as it relates to websites and servers-->
+        When a client goes to a webpage, <strong>index.html</strong> is the page the server will send back to show the client. 
+        The index.html file is the name of the resource on the server. As a convention, most web servers are 
+        configured so that the request for / is mapped to the file at the path /index.html. This file is 
+        called the designated <strong>homepage</strong> on the web server. In almost all real-world web applications, the 
+        file index.html in the root directory is called the home page of the web application, and the web 
+        application is configured to return this file whenever a <strong>GET request</strong> receives the <strong>URL</strong>. Index.html 
+        is the default name for a home page of a website hosted on an Apache web server.
+    </p>
+    <p>
+        <!--Explain what you see in the browser's Web Dev/Inspector tools. What is different about the file's 
+        details on the web server versus the local computer?-->
+        The web server version takes more than twice the amount of time to access than the local computer 
+        version. The web server version uses the same index.html as the local computer, but the web server  
+        version runs a <strong>JavaScript</strong> called executor.js and uses favicon.ico for making a custom browser tab icon. 
+        The browser tab and contents for both web server and local computer shows my name, Tony Chan, and same 
+        contents. The <strong>HTTP request</strong> lines for the two versions are similar, except for the URL paths. Both have 
+        the <strong>GET</strong> request method and the same successful <strong>request response</strong> of 200. The web server version has 
+        an IP address for finding the target web server, but the local computer version does not. The <strong>request 
+        header</strong> for the web server version shows the client can handle text/html, English and encoding types. 
+        The local computer request header references Chrome, which can do the same things. The request method 
+        is GET, which means the request header body will be empty. No document is being requested. The <strong>HTTP 
+        response</strong> are different for the two versions. In this example, no separate server is invoked. 
+        The request is just for a static index.html file, which is sent back to the client. The local computer 
+        version has minimal <strong>response header</strong> content. The web server version has more response header content 
+        and the content type is specified as test/html. The web server version has to access a server far away 
+        and more information is needed. A <strong>TCP/IP</strong> connection needs to be opened to the web server. The response 
+        header has connection set to keep alive and uses an Apache server program. The <strong>response header body</strong>
+        is the index.html file at the web server address, which is sent back to the client. 
+    </p>
+    <p>
+        <!--Explain why the favicon.ico file has a status 200, but the main.css and main.js files do not.-->
+        The <strong>response status</strong> for favicon.ico is 200, which means the HTTP request was successfully processed 
+        by the server. The files <strong>main.css</strong> and <strong>main.js</strong> do not have a response status code and are showing 
+        errors. The browser inspection tool indicates the main.css and main.js files do not exist and are 
+        generating an error for each. The line of code with command link is looking for these two files. 
+        After I create these two files in the same directory as index.html, the errors are eliminated and 
+        the response status code is 200 for each file. 
+    </p>
+    <p>
+        <!--Explain the parts of the URL to your web file. What are the scheme, subdomain, host domain, and 
+        resources?-->
+        The <strong>URL</strong> to my web file is a unique identifier. The scheme in my web file is HTTPS. A URL starts with 
+        a <strong>scheme</strong> which identifies the protocol the web client must use to request the resource. A <strong>subdomain</strong> 
+        is a subsection of that <strong>domain/server</strong>. Its name is appended to the front of the <strong>domain name</strong>. In my 
+        web file, the subdomains are “web” and “engr.” The domain name is mapped to the IP address for that 
+        server machine. In my web file, the domain name is oregonstate.edu. The resource in my web file URL 
+        is index.html and the <strong>resource path</strong> is ~chanto/a1-chanto/.
+    </p>
+    </article>
+
+
+    <article id="frontend">
+    <h3>
+        Frontend Design
+    </h3>
+
+    <p>
+        <!--The concept of frontend design-->
+        <strong>Frontend design</strong> is about creating an interface that is both aesthetically pleasing and functional. This means considering the user's experience and the purpose of the web page. One important consideration is adapting the viewing environment to different formats, from mobile phones to large screen displays, to ensure that the web page is accessible and usable on any device.
+
+        The <strong>graphical user interface (GUI)</strong> is a key component of frontend design. It should be simple to use and intuitive, with clear navigation and prominent calls to action. The organization of the web page should be logical and easy to follow, with the most significant information positioned prominently to catch the user's attention. While the top right corner is often a good position for key information, this can vary depending on the purpose and content of the web page.
+
+        Color can be used to evoke emotions and create contrast, while typography and fonts can convey hierarchy and readability. Media such as images and videos can also enhance the user experience, but should be used sparingly to avoid overwhelming the user.
+
+        Usability is a critical component of frontend design. It's about making it easy for users to accomplish specific tasks, such as making a purchase or searching for a topic of interest. This means designing with the user in mind and considering factors such as load times, clear messaging, and accessibility for users with disabilities.
+
+        Overall, frontend design is a complex and multifaceted discipline that requires careful consideration of a wide range of factors. By focusing on user experience, GUI design, organization, and usability, designers can create effective and engaging frontend designs.
+
+    </p>
+
+    <dl>
+        <!--The five "E"s of usability-->
+        <h4>The Five "E"s of Usability</h4>
+        <dt>Effective</dt>
+        <dd>It is easy for users to meet their goal(s). The main messages are clear.</dd>
+        <dt>Efficient</dt>
+        <dd>The user can get through the website with the fewest clicks as possible.</dd>
+        <dt>Easy to navigate</dt>
+        <dd>For first time users, the website should be intuitive to get around. The main topics should be main headers.</dd>
+        <dt>Error-free</dt>
+        <dd>The website needs to be tested for all the possible results that a customer will want to achieve.</dd>
+        <dt>Enjoyable to use, or engaging</dt>
+        <dd>The overall experience needs to be hassle-free and give what the customer wants.</dd>
+
+    </dl>
+
+    <p>
+        <!--The purpose of page layout tags-->
+        <strong>Page layout tags</strong> are <strong>block-level elements</strong> such as paragraph, headers, lists, 
+        navigation, tables and many more. There are two categories called block level elements or <strong>inline level 
+        elements</strong> that contribute to the flow control in HTML. A Block-level element occupies the entire 
+        horizontal space, and vertical space equal to the height of its contents, thereby creating a “block”. 
+        On the other hand, inline elements can start anywhere in a line. Browsers typically display the block-level 
+        element with a newline both before and after the element. A block-level element always starts on a new line 
+        and takes up the full width available. Block-level elements may appear only within a body element. 
+
+    </p>
+
+    <p>
+        <!--How anchors link to content and from page to page? Clarification: What is the conceptual difference between text anchors and navigation?-->
+        We create links from one section or page to another using the <strong>anchor element</strong>. The content between the opening and closing anchor element tags should describe the link when someone clicks to navigate to it. The anchor element's <strong>HREF</strong> attribute, creates a hyperlink to web pages, files, email addresses, locations on the same page, or anything else a URL can address. Content within each anchor element should indicate the link's destination. If the HREF attribute is present, pressing the enter key while focused on the anchor element will activate it. It is possible to use the anchor element's HREF attribute to link to a specific location within a document, rather than just the top of the document. <strong>Text anchor</strong> is an attribute to elements such as TEXT, TREF, TSPAN and more. It is used to align (start-, middle- or end-alignment) a string of pre-formatted text or auto-wrapped text and is applied to each individual text chunk within a given <text> element. The <strong>navigation</strong> HTML element represents a section of a page whose purpose is to provide navigation links, either within the current document or to other documents. Common examples of navigation sections are menus, tables of contents, and indexes. The navigation element is intended only for a major block of navigation links. A document may have several navigation elements, for example, one for site navigation and one for inside the same page navigation.
+
+    </p>
+    </article>
+
+    <article id="images">
+    <h3>Optimizing Images</h3>
+    
+    <p>
+        <!--What are the 6 major specifications of images for the web? And why?-->
+        <!--Which file formats are most appropriate for photos and for line art? And why?-->
+        In order to improve the image usability of HTML and loading of webpage images, there are six image specifications for the web. 
+        <ul>
+            <li>Use descriptive and short file names that contain who, what, when and where. Search engines will scan file names for categorization for others looking for this topic. </li>
+            <li>Use compression applications to reduce file sizes to as small as possible in order to reduce load times, but do not sacrifice image quality too much. </li>
+            <li>Crop the images to the dimensions that will fit your webpage space. Frame the image on one main point, which will help the viewer know what the image is about and not get distracted by other objects. For displaying programming code, just show a small function or a section of code that is readable.</li>
+                
+            <li>The correct file format for pictures is <strong>JPEG</strong>. It is a good choice for lossy compression of still images and is currently the most popular. JPEG files are only used for photographic images. They compress down to small file sizes and remain rectangular. <strong>Graphics Interchange Format, GIF,</strong> and 8-bit <strong>PNG</strong> are correct file formats for logos, icons, and line art. GIF is a good choice for simple images and animations. GIF files can have 8-bit transparency and/or animation and are typically used for line-art graphics. Their edges anti-alias to one background matte color. Portable Network Graphics, PNG, is preferred over JPEG for more precise reproduction of source images, or when transparency is needed. </li>
+            
+            <li>Image usability will provide multiple image sizes for a range of monitor sizes is becoming a standard. Responsive images are images that work well on devices with widely differing screen sizes, resolutions, and other such features. This helps to improve performance across different devices. An improvement would be to display a cropped version of the image which displays the important details of the image when the site is viewed on a narrow screen. A second cropped image could be displayed on a medium width screen device, like a tablet. The general problem whereby you want to serve different cropped images in that way, for various layouts, is commonly known as the art direction problem. In addition, there is no need to embed such large images on the page if it is being viewed on a mobile screen. Doing so can waste bandwidth; in particular, mobile users don't want to waste bandwidth by downloading a large image intended for desktop users, when a small image would do for their device. Ideally, multiple resolutions would be made available to the user's web browser. The browser could then determine the optimal resolution to load based on the screen size of the user's device. </li>
+            
+            <li>Lastly, for image usability, there is a color mode for HTML with 256 predefined HTML colors such as red, blue, pink and more. Other color modes are <strong>hex</strong> (hexadecimal) codes, <strong>RGB</strong> (red, green, blue), <strong>RGBA</strong> (red, green, blue, alpha), and <strong>HSL</strong> (hue, saturation, lightness). Select which color mode by file format such as RGB for PNG, JPG, SVG, and WebP, and Indexed for GIF. </li>
+
+        </ul>
+
+    </p>
+    </article>
+
+    <article id="css">
+    <h3>Cascading Stylesheets</h3>
+    <p>
+        <!--What are the main reasons to incorporate stylesheets in websites and apps?-->
+        Before <strong>Cascading Style Sheets, CSS</strong>, HTML had a big problem. It was, HTML was never intended to contain tags for formatting a web page. Then in some later versions of HTML, fonts and color information were added to the language. Developers had the difficulty to consistently maintaining style formatting page by page. CSS changed all that. It removed the style formatting from the HTML page. CSS is used to define styles for your web pages, including the design, layout, and variations in display for different devices and screen sizes. The style definitions are normally saved in external .css files. With an external stylesheet file, you can change the look of an entire website by changing just one file, which saves the developer from a lot of work adjusting page by page. It allows the developer to make the webpage to what he is envisioning it to be.
+
+    </p>
+    <p>
+        <!--What are the 5 ways to incorporate styles? And why?-->
+        A main external CSS file can be linked in the global head of an index.html. Other stylesheets for specific components can be linked after the global CSS file or, imported into that global stylesheet. There are five different ways to include styles after the global stylesheet. 
+        <ul>
+            <li>The first method, an externally linked CSS file. For this webpage, the global stylesheet example is &lt;link rel="stylesheet” type="text/css” media="screen” href="main.css”&gt; or use import, @import “component1.css”;</li>
+            <li>The second method is embed or internal style within a &lt;style&gt;&lt;/style&gt; tag. An internal CSS is used to define a style for a single HTML page.  An example is &lt;style&gt; h1 {color: blue;} p {color: red;} &lt;/style&gt; </li>
+            <li>The third way is inline, which uses the style attribute of an HTML element. The element's attribute and value are used. An inline CSS is used to apply a unique style to a single HTML element. An example is &lt;h1 style="color:blue;”&gt;A Blue Heading &lt;/h1&gt;</li>
+            <li>A fourth method is in JavaScript template literals within a JavaScript function. </li>
+            <li>Lastly, In regular JavaScript, by manipulating the Document Object Model (DOM).</li>
+
+        </ul>
+
+    </p>
+    </article>
+
+
+    <article id="forms">
+        <h3>Forms</h3>
+        <p>
+            <!--What are the 6 major goals of accessible forms? And why?-->
+            The six main goals of accessible forms are
+            <ul>
+                <li>Provide clear instructions above the form and in the labels. Placeholder values are only helpful for users with vision.</li>
+                <li>Let users know why you're gathering the data and which fields are required.</li>
+                <li>Set the first field to autofocus, so users can start typing without using the keyboard.</li>
+                <li>Ensure each form control can be filled in using the keyboard, for those that cannot or don't use a mouse or trackpad.</li>
+                <li>Add tab indexing to complex forms, so it is clear in which order the fields should be filled.</li>
+                <li>Ensure validation messages are screen readable. The built-in HTML browser message is not screen-readable.</li>
+            </ul>
+        </p>
+
+        <p>
+            <!--What are the major tags, their attributes , and their purposes?-->
+            
+                We will be using these basic form elements throughout the remainder of the course: <strong>form, fieldset, legend, label, input, select, option, and textarea.</strong>
+            <ul>
+                <li>The <strong>form</strong> HTML element represents a document section containing interactive controls for submitting information and has two very important attributes. The first is action, which specifies where the request from the form should be sent. The second essential attribute is method, which specifies the HTTP method to be used in the HTTP request sent when the form is submitted.</li>
+                
+                <li>The <strong>label</strong> HTML element represents a caption for an item in a user interface. Associating a label with a form control, such as input or textarea offers some major advantages. The label text is not only visually associated with its corresponding text input; it is programmatically associated with it, too. This means that, for example, a screen reader will read out the label when the user is focused on the form input, making it easier for an assistive technology user to understand what data should be entered.</li>
+                
+                <li>The <strong>fieldset</strong> HTML element is used to group several controls as well as labels within a web form. The fieldset element provides a grouping for a part of an HTML form, with a nested legend element providing a caption for the fieldset.</li>
+                
+                <li>The <strong>legend</strong> HTML element represents a caption for the content of its parent fieldset.</li>
+                
+                <li>The <strong>input</strong> HTML element is used to create interactive controls for web-based forms in order to accept data from the user. A wide variety of types of input data and control widgets are available, depending on the device and user agent. The input element is one of the most powerful and complex in all of HTML due to the sheer number of combinations of input types and attributes. How an input works varies considerably depending on the value of its type attribute. The input element is so powerful because of its attributes. Some attributes are <strong>checkbox, radio, email, button, image, submit</strong> and more. If this attribute is not specified, the default type adopted is text. Another important input element attribute is the <strong>name.</strong> It is a string specifying a name for the input control. This name is submitted along with the control's value when the form data is submitted. The name attribute creates a unique behavior for radio buttons. Consider the name a required attribute, even though it is not required.</li>
+                
+                <li>The <strong>select</strong> HTML element represents a control that provides a menu of options. The select element has some unique attributes you can use to control it, such as multiple to specify whether multiple options can be selected, and size to specify how many options should be shown at once. It also accepts most of the general form input attributes such as required, disabled, autofocus, etc.</li>
+                
+                <li>The <strong>option</strong> HTML element is used to define an item contained in a select, an optgroup, or a datalist element. As such, option can represent menu items in popups and other lists of items in an HTML document. Each menu option is defined by an option element nested inside the select element. Each option element should have a value attribute containing the data value to submit to the server when that option is selected. If no value attribute is included, the value defaults to the text contained inside the element.</li>
+                
+                <li>The <strong>textarea</strong> HTML element represents a multi-line plain-text editing control, useful when you want to allow users to enter a sizeable amount of free-form text, for example a comment on a review or feedback form.</li>
+                
+                <li>The <strong>button</strong> HTML element is an interactive element activated by a user with a mouse, keyboard, finger, voice command, or other assistive technology. Once activated, it then performs an action, such as submitting a form or opening a dialog.</li>
+                </ul>
+        
+        </p>
+
+        <p>
+            <!--What are the major form style recommendations to improve usability? And why?-->
+            The major form style recommendations to improve usability include making inputs, selects, and buttons about the size of the tip of a finger, visually separating groups of labels and inputs, and spacing out the forms for better readability. It's also important to use clear and descriptive language in form labels and instructions, avoiding jargon or technical language that may be unfamiliar to users. Inline validation, which provides immediate feedback to users when they enter information that is incorrect or incomplete, can also help improve usability by reducing frustration and errors.
+
+            To group controls, developers can use the <strong>fieldset</strong> element, and the <strong>legend</strong> element can provide a caption for the content. Using the <strong>label</strong> element with the <strong>block</strong> attribute can improve readability, and attributes such as <strong>autofocus</strong> and <strong>required</strong> can help guide users through the form. Additionally, increasing font size and adding padding can accommodate users with larger fingers or arthritis.
+            
+            Finally, using consistent design patterns and layout across forms can help users feel more comfortable and confident in completing them. By implementing these form style recommendations, developers can improve the usability and accessibility of their forms, making them easier and more efficient for users to complete.
+            
+        </p>
+
+    </article>
+
+    <article id="express">
+        <h3>Express</h3>
+        <p>
+            <!--What is Node.js, and how can we use it to improve the web development experience?-->
+            <h4>Node.js</h4>
+            <strong>Node.js</strong> was written initially by Ryan Dahl in 2009 and is a cross-platform, open-source server environment that can run on Windows, Linux, Unix, macOS, and more. Node.js is a JavaScript runtime environment that works on the backend server hardware and executes JavaScript code outside a web browser. Node.js allows the creation of Web servers and networking tools using JavaScript for server-side scripting and a collection of modules that handle various core functionalities. The ability to run JavaScript code on the server is often used to generate dynamic web page content before the page is sent to the user's web browser. Node.js brings event-driven programming to web servers in which the flow of the program is determined by events such as user actions (mouse clicks, key presses), sensor outputs, or message passing from other programs or threads. A result of event driven programming is the development of fast web servers in JavaScript. Developers can create scalable servers without using threading, by using a simplified model of event-driven programming that uses callbacks to signal the completion of a task. Node.js connects the ease of a scripting language (JavaScript) with the power of Unix network programming.
+        </p>
+
+        <p>
+            <!--What is NPM, and how can we use it to improve the web development experience?-->
+            <h4>NPM</h4>
+            In January 2010, <strong>NPM</strong> became the package manager for the Node JavaScript platform. The package manager makes it easier for programmers to publish and share source code of Node.js packages. It is designed to simplify installation, updating, and intelligent uninstallation of packages. It consists of a command line client, also called NPM, and an online database of public and paid-for private packages, called the NPM registry. The registry is accessed via the client, and the available packages can be browsed and searched via the NPM website. NPM is included as a recommended feature in the Node.js installer. When used as a dependency manager for a local project, NPM can install, in one command, all the dependencies of a project through the package.json file. In the package.json file, each dependency can specify a range of valid versions using the semantic versioning scheme, allowing developers to auto-update their packages while at the same time avoiding unwanted breaking changes. NPM also provides version-bumping tools for developers to tag their packages with a particular version. NPM also provides the package-lock.json file, which has the entry of the exact version used by the project after evaluating semantic versioning in package.json.          
+        </p>
+
+        <p>
+            <!--What is Express, and how can we use it to improve the web development experience?-->
+            <h4>Express</h4>
+            <strong>Express.js</strong> is a tool that helps developers build web applications, which are basically websites or online services that you can use from your computer or phone. Think of it as a set of building blocks that developers can use to create these websites and make them work properly. Express.js is especially helpful because it provides a lot of useful features that make it easier for developers to create these web applications. For example, it helps them handle requests from users who are visiting the website, store data that users enter, and display information back to the users. Express.js is different from Node.js. Express.js is a web application framework for Node.js. It is built on top of Node.js and provides a set of features for building web applications such as routing, middleware, and HTTP utilities. Express.js is often used to create APIs or web applications that handle HTTP requests and responses. In other words, Node.js provides the runtime environment for JavaScript to run on a server, while Express.js provides the framework for building web applications on top of Node.js. Express.js is not a requirement to use Node.js, but it is a popular choice for building web applications because it simplifies many common tasks and provides a structured way to organize your code. Overall, Express.js is a tool that makes it easier for developers to build websites and online services that work well and provide a good experience for users.
+        </p>
+
+    </article>
+    </section>
+    </main>
+
+        <footer>
+            <p>
+            &copy; 2023 Tony Chan
+            </p>
+        </footer>
+    
+</body>
+</html>
