@@ -162,6 +162,8 @@ Note: If you see any errors, make sure you are in the html-to-fullstack-mern-pro
 [Assignment stage 4_1 (PNG)](docs/screenshots/assign_4_1.png)
 [Assignment stage 4_2 (PNG)](docs/screenshots/assign_4_2.png)
 [Assignment stage 4_3 (PNG)](docs/screenshots/assign_4_3.png)
+[Assignment stage 5_1 (PNG)](docs/screenshots/assign_5_1.png)
+[Assignment stage 5_2 (PNG)](docs/screenshots/assign_5_2.png)
 
 ## PDF Report
 [Final Report (PDF)](docs/_____.pdf)
