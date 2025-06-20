@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tony Chan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <header>
+    <h1>Tony Chan</h1>
+    </header>
+
+    <nav class="global">
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="order.html">Order</a>
+        <a href="staff.html">Staff</a>
+    </nav>
+
+    <main>
+
+    <section>
+    <h2>Order</h2>
+    <article>
+    <p>
+        Order your favorite pet products here. Please fill out the form below to order. Start at the top and click through the form. Name, email, and comments are required.
+    </p>
+
+
+    <!-- The action attribute refers to a script file, or to a route for the data. The method refers to a GET or POST request. --> 
+    <form action="/orders" method="POST" class="sideByside">
+        <fieldset>
+            <!-- Required questions for this legend -->
+            <legend>Add your Name, Email, Street address and Shipping instructions</legend>
+
+            <!-- It is best practice to require the user's name. -->
+            <label for="firstlast" class="required">First and Last Name</label>
+                <input type="text" 
+                name="firstlast" 
+                id="firstlast" 
+                size="30" 
+                maxlength="100" 
+                required placeholder="First and last name" 
+                autofocus/>
+            
+            <!-- Require the email, so you can respond to the user. Use the pattern attribute with a regular expression to check for the correct format. -->
+            <label for="email" class="required">Email</label>
+                <input type="email" 
+                name="email" id="email" 
+                size="30" maxlength="100" 
+                required 
+                pattern="[^ @]+@[^ @]+.[a-z]+"
+                placeholder="name@host.com"/>
+        
+            <!-- Street address input -->
+            <label for="address" class="required">Street Address</label>
+                <input type="text" 
+                name="address" 
+                id="address" 
+                size="30" 
+                maxlength="100" 
+                required placeholder="Street address, city, state, zip"/>
+
+          <!-- Set limits for this box to help avoid script injections. -->
+            <label for="delInstruct">Delivery Instructions</label>
+                <textarea name="delInstruct" 
+                id="delInstruct" 
+                minlenth="3" 
+                maxlenth="250" 
+                rows="5"
+                cols="35"
+                placeholder="Write 250 characters or less."></textarea>
+        </fieldset>
+
+
+
+        <!-- Not required questions for this legend--> 
+        <fieldset>
+            <legend>Select One Product?</legend>
+            <!--Add product table-->
+            <table id="petProducts">
+                <caption>Pet Products</caption>
+
+                <thead>
+                    <tr>
+                        <th>Company</th>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Select One Product</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>AGYM</td>
+                        <td>Spinning Cat Scratcher Ball</td>
+                        <td>52.99</td>
+                        <td><label for="AGYM"></label><input type="radio" name="petProduct" id="AGYM" value="Spinning Cat Scratcher Ball"></td>
+                    </tr>
+                    <tr>
+                        <td>Jasonwell</td>
+                        <td>Foldable Dog Pool</td>
+                        <td>27.25</td>
+                        <td><label for="Jasonwell"></label><input type="radio" name="petProduct" id="Jasonwell" value="Foldable Dog Pool"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Expawlorer</td>
+                        <td>Dog Fence Window</td>
+                        <td>30.50</td>
+                        <td><label for="Expawlorer"></label><input type="radio" name="petProduct" id="Expawlorer" value="Dog Fence Window"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Lollimeow</td>
+                        <td>Capsule Pet Travel Backpack</td>
+                        <td>59.00</td>
+                        <td><label for="Lollimeow"></label><input type="radio" name="petProduct" id="Lollimeow" value="Capsule Pet Travel Backpack"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Drool'd</td>
+                        <td>Cat Hamster Wheel</td>
+                        <td>349.75</td>
+                        <td><label for="Drool'd"></label><input type="radio" name="petProduct" id="Drool'd" value="Cat Hamster Wheel"></td>
+                    </tr>
+                    </tbody>
+            </table>
+
+            <!-- Quantity input -->
+            <label for="quantity">Quantity, 1 to 99</label>
+                <input type="number" 
+                name="quantity" 
+                id="quantity" 
+                min="1" 
+                max="99" 
+                step="1" 
+                value="1" 
+                required/>
+
+          <!-- Use the button element to send the data -->
+            <button type="submit">Submit review</button>
+    
+        </fieldset>
+    </form>
+    </article>
+</section>
+
+</main>
+    <footer>
+        <p>
+        &copy; 2023 Tony Chan
+        </p>
+    </footer>
+
+</body>
+</html>

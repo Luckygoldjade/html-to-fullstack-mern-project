@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tony Chan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="random.js"></script>
+</head>
+
+<body>
+    <header>
+    <h1>Tony Chan</h1>
+    </header>
+
+    <nav class="global">
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="order.html">Order</a>
+        <a href="staff.html">Staff</a>
+    </nav>
+
+    <main>
+
+    <section>
+    <h2>Staff Employees</h2>
+    <article>
+    <p>
+        This page will display a list of staff employees. There are two ways to generate the list. The first is to use a browser request. The second is to use a server request. The server request will be used to generate the list of random staff employees. The browser request will be used to generate the list of random staff employees. The random staff employees will be generated using the <a href="https://randomuser.me/" target="_blank">Random User Generator</a> API.
+    </p>
+
+    <fieldset>
+        <legend>Staff Info</legend>
+        <!--Add staff info table-->
+        <table>
+            <caption>Staff Info</caption>
+            <thead>
+                <tr>
+                    <th>Portrait</th>
+                    <th>Name/Email</th>
+                    <th>Telphone</th>
+                    <th>City</th>
+                </tr>
+            </thead>
+            <tbody id="staffPerson">
+                <!--Auto add staff info here-->
+            </tbody>
+        </table>
+    </fieldset>
+    
+    <p>
+        Choose API request type:
+        <!--browser request-->
+        <button id="browReqPerson" value="Call API from browser">from browser</button>
+        Or
+        <!--server request-->
+        <button id="servReqPerson" value="Call API through server">through server</button>
+    </p>
+
+    </article>
+    </section>
+
+</main>
+
+</body>
+</html>
