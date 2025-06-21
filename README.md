@@ -93,7 +93,7 @@ Make sure you have Node.js installed on your computer.
 
 Steps
 1. Open the project folder
-In VS Code or your file explorer, open the folder named:
+In VS Code or your file explorer, open the folder named:<br>
 Assignment_5-Process Order Form Data
 
 2. Open a terminal
@@ -101,13 +101,13 @@ In VS Code: Go to Terminal > New Terminal
 Or use Command Prompt / PowerShell in Windows
 
 3. Install all dependencies
-Run this command in the terminal (this will use the existing package.json):
+Run this command in the terminal (this will use the existing package.json):<br>
 npm install
 
 This will install everything needed, including express and nodemon.
 
 4. Start the app
-Run:
+Run:<br>
 npm start
 
 The app will start, and you can view it in your browser at:
@@ -128,7 +128,7 @@ Make sure you have Node.js installed on your computer.
 
 Steps
 1. Open the project folder
-In VS Code or your file explorer, open the folder named:
+In VS Code or your file explorer, open the folder named:<br>
 Assignment_6-DOM manipulation with Random Staff
 
 2. Open a terminal
@@ -136,13 +136,13 @@ In VS Code: Go to Terminal > New Terminal
 Or use Command Prompt / PowerShell in Windows
 
 3. Install all dependencies
-Run this command in the terminal (this will use the existing package.json):
+Run this command in the terminal (this will use the existing package.json):<br>
 npm install
 
 This will install everything needed, including express and nodemon.
 
 4. Start the app
-Run:
+Run:<br>
 npm start
 
 The app will start, and you can view it in your browser at:
@@ -153,6 +153,40 @@ Note:
 Do not run npm init or delete/replace package.json.
 Just use the provided package.json and follow the steps above.
 
+### Assignment 7: Convert to React App
+Important
+Do not delete or replace the existing package.json file.
+It already contains all the necessary settings and dependencies for this project.
+
+Requirements
+Make sure you have Node.js installed on your computer.
+
+Steps
+1. Open the project folder
+In VS Code or your file explorer, open the folder named:<br>
+Assignment_7-Convert to React App
+
+2. Open a terminal
+In VS Code: Go to Terminal > New Terminal
+Or use Command Prompt / PowerShell in Windows
+
+3. Install all dependencies
+Run this command in the terminal (this will use the existing package.json):<br>
+npm install
+
+This will install everything needed, including express and nodemon.
+
+4. Start the app
+Run:<br>
+npm start
+
+The app will start, and you can view it in your browser at:
+http://localhost:3000
+
+Note:
+
+Do not run npm init or delete/replace package.json.
+Just use the provided package.json and follow the steps above.
 
 ### Assignment 8
 Two terminals will be open to run app.
@@ -186,19 +220,18 @@ https://localhost:8000
 Note: If you see any errors, make sure you are in the html-to-fullstack-mern-project folder and that Node.js is installed.
 
 ## Screenshots of Progress in Assignment Stages
-[Assignment stage 1 (PNG)](docs/screenshots/assign_1.png)
-
-[Assignment stage 2 (PNG)](docs/screenshots/assign_2.png)
-
+[Assignment stage 1 (PNG)](docs/screenshots/assign_1.png)<br>
+[Assignment stage 2 (PNG)](docs/screenshots/assign_2.png)<br>
 [Assignment stage 3_1 (PNG)](docs/screenshots/assign_3_1.png)<br>
 [Assignment stage 3_2 (PNG)](docs/screenshots/assign_3_2.png)<br>
 [Assignment stage 4_1 (PNG)](docs/screenshots/assign_4_1.png)<br>
-[Assignment stage 4_2 (PNG)](docs/screenshots/assign_4_2.png)
-[Assignment stage 4_3 (PNG)](docs/screenshots/assign_4_3.png)
-[Assignment stage 5_1 (PNG)](docs/screenshots/assign_5_1.png)
-[Assignment stage 5_2 (PNG)](docs/screenshots/assign_5_2.png)
-[Assignment stage 6_1 (PNG)](docs/screenshots/assign_6_1.png)
-[Assignment stage 6_2 (PNG)](docs/screenshots/assign_6_2.png)
+[Assignment stage 4_2 (PNG)](docs/screenshots/assign_4_2.png)<br>
+[Assignment stage 4_3 (PNG)](docs/screenshots/assign_4_3.png)<br>
+[Assignment stage 5_1 (PNG)](docs/screenshots/assign_5_1.png)<br>
+[Assignment stage 5_2 (PNG)](docs/screenshots/assign_5_2.png)<br>
+[Assignment stage 6_1 (PNG)](docs/screenshots/assign_6_1.png)<br>
+[Assignment stage 6_2 (PNG)](docs/screenshots/assign_6_2.png)<br>
+[Assignment stage 7_1 (PNG)](docs/screenshots/assign_7_1.png)<br>
 
 
 ## GitHub Pages
