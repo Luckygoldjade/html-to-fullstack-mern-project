@@ -188,6 +188,47 @@ Note:
 Do not run npm init or delete/replace package.json.
 Just use the provided package.json and follow the steps above.
 
+### Extra Credit Assignment M8DB — Database Persistence
+Important
+Do not delete or replace the existing package.json file.
+It already contains all the necessary settings and dependencies for this project.
+
+Requirements
+Make sure you have Node.js installed on your computer.
+
+Steps
+1. Open the project folder
+In VS Code or your file explorer, open the folder named:<br>
+Extra Credit Assignment M8DB — Database Persistence
+
+2. Open a terminal
+In VS Code: Go to Terminal > New Terminal
+Or use Command Prompt / PowerShell in Windows
+
+3. Install all dependencies
+Run this command in the terminal (this will use the existing package.json):<br>
+npm install
+
+This will install everything needed, including express and nodemon.
+
+4. Start the app
+Run:<br>
+npm start
+
+The app will start, and you can view it in your browser at:
+http://localhost:3000
+
+Note:
+
+Do not run npm init or delete/replace package.json.
+Just use the provided package.json and follow the steps above.
+
+
+
+
+
+
+
 ### Assignment 8
 Two terminals will be open to run app.
 Go into the project folder:
@@ -235,6 +276,7 @@ Note: If you see any errors, make sure you are in the html-to-fullstack-mern-pro
 
 
 ## GitHub Pages
+The last assignment with full HTML before coverting to React
 Fix***
 
 ## What You Learned
