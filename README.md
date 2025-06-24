@@ -193,35 +193,68 @@ Important
 Do not delete or replace the existing package.json file.
 It already contains all the necessary settings and dependencies for this project.
 
-Requirements
-Make sure you have Node.js installed on your computer.
 
-Steps
-1. Open the project folder
-In VS Code or your file explorer, open the folder named:<br>
-Extra Credit Assignment M8DB — Database Persistence
+#### MongoDB Atlas Setup & Project Configuration (Beginner Guide)
+1. Create a Free MongoDB Atlas Account
+- Go to https://www.mongodb.com/cloud/atlas
+- Click Sign Up and create a free account.
+2. Create a Free Cluster
+- After logging in, click Build a Database.
+- Choose the Shared (free) option.
+- Select your preferred cloud provider and region.
+- Name your cluster and click Create.
+3. Create a Database User (for App Access)
+- In the Atlas dashboard, go to Database Access (left menu).
+- Click Add New Database User. (This account and password are different from mongodb.com account and password)
+- Set a username and password (save these for later)(for mongodb connection string).
+- Give the user Read and Write to any database.
+4. Allow Network Access
+- Go to Network Access (left menu).
+- Click Add IP Address.
+- Add your current IP address, or use 0.0.0.0/0 to allow all IPs (for development only).
+5. Get Your MongoDB Connection String
+- Go to Clusters > Connect > Connect your application.
+- Copy the connection string that looks like:
 
-2. Open a terminal
-In VS Code: Go to Terminal > New Terminal
-Or use Command Prompt / PowerShell in Windows
+mongodb+srv://<username>:<password>@cluster0.xxxxx.mongodb.net/<dbname>?retryWrites=true&w=majority
+- Replace <username>, <password>, and <dbname> with your actual database user and database name.
 
-3. Install all dependencies
-Run this command in the terminal (this will use the existing package.json):<br>
+6. Configure Your .env File
+- The connection string account and password are different from mongodb.com account and password.
+- In your project’s backend folder, you’ll find a file named dot_env_example.
+- Copy dot_env_example and rename the copy to .env.
+- Open .env and paste your MongoDB connection string:
+
+MONGODB_CONNECT_STRING=mongodb+srv://<username>:<password>@cluster0.xxxxx.mongodb.net/<dbname>?retryWrites=true&w=majority
+- Never commit your .env file to Git or share it publicly.
+
+#### Running the Project
+1. Install Dependencies
+Backend
+cd backend
 npm install
 
-This will install everything needed, including express and nodemon.
+Frontend
+cd ../frontend
+npm install
 
-4. Start the app
-Run:<br>
+2. Start the Backend Server
+
+cd ../backend
 npm start
+- This will connect your backend to MongoDB Atlas using the connection string in .env.
 
-The app will start, and you can view it in your browser at:
-http://localhost:3000
+3. Start the Frontend React App
 
-Note:
+cd ../frontend
+npm start
+- This will run the React frontend at http://localhost:3000.
 
-Do not run npm init or delete/replace package.json.
-Just use the provided package.json and follow the steps above.
+Notes
+- The MongoDB connection string is used by Node.js and Mongoose (your backend uses Mongoose to connect).
+- The dot_env_example file is a template—always copy it to .env and fill in your real values.
+- For security, never share your real .env file or credentials.
+- Do not run npm init or delete/replace package.json. Just use the provided package.json and follow the steps above.
 
 
 
@@ -229,7 +262,7 @@ Just use the provided package.json and follow the steps above.
 
 
 
-### Assignment 8
+### Assignment 8: Portfolio Site Using Full-stack MERN
 Two terminals will be open to run app.
 Go into the project folder:
 cd html-to-fullstack-mern-project/frontend
@@ -258,7 +291,6 @@ Fix***
 https://localhost:8000
 
 
-Note: If you see any errors, make sure you are in the html-to-fullstack-mern-project folder and that Node.js is installed.
 
 ## Screenshots of Progress in Assignment Stages
 [Assignment stage 1 (PNG)](docs/screenshots/assign_1.png)<br>
