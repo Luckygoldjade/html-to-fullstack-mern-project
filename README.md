@@ -289,7 +289,7 @@ MONGODB_CONNECT_STRING=mongodb+srv://<username>:<password>@cluster0.xxxxx.mongod
 #### Running the Project
 Two terminals will be open to install and run frontend and backend app separately.
 
-1. Install Dependencies
+1. Install Dependencies<br>
 Backend<br>
 cd backend<br>
 Open a terminal (Command Prompt or PowerShell on Windows). Terminal right.<br>
