@@ -339,7 +339,7 @@ Notes
 
 ## GitHub Pages
 Assignment 6 is the last full HTML webpage before converting to React
-Fix***
+https://luckygoldjade.github.io/html-to-fullstack-mern-project/Assignment_6-DOM%20manipulation%20with%20Random%20Staff/public/index.html
 
 ## What You Learned
 Developed a full-stack JavaScript application using the MERN stack (MongoDB, Express, React, Node.js).
