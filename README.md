@@ -230,25 +230,15 @@ MONGODB_CONNECT_STRING=mongodb+srv://<username>:<password>@cluster0.xxxxx.mongod
 
 #### Running the Project
 1. Install Dependencies
-Backend
-cd backend
-npm install
 
-Frontend
-cd ../frontend
 npm install
 
 2. Start the Backend Server
 
-cd ../backend
 npm start
 - This will connect your backend to MongoDB Atlas using the connection string in .env.
-
-3. Start the Frontend React App
-
-cd ../frontend
-npm start
-- This will run the React frontend at http://localhost:3000.
+View the backend website
+- Open your web browser and go to https://localhost:3000
 
 Notes
 - The MongoDB connection string is used by Node.js and Mongoose (your backend uses Mongoose to connect).
@@ -344,10 +334,11 @@ Notes
 [Assignment stage 6_1 (PNG)](docs/screenshots/assign_6_1.png)<br>
 [Assignment stage 6_2 (PNG)](docs/screenshots/assign_6_2.png)<br>
 [Assignment stage 7_1 (PNG)](docs/screenshots/assign_7_1.png)<br>
+[Assignment stage 8_1 (PNG)](docs/screenshots/assign_8_1.png)<br>
 
 
 ## GitHub Pages
-The last assignment with full HTML before coverting to React
+Assignment 6 is the last full HTML webpage before converting to React
 Fix***
 
 ## What You Learned
