@@ -1,0 +1,19 @@
+{
+  "name": "trades-starter-backend",
+  "version": "2023",
+  "description": "backend using react connecting to mongodb using mongoose",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon trades-controller.mjs"
+  },
+  "author": "Tony C",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^6.9.1",
+    "nodemon": "^2.0.20",
+    "rest": "^2.0.0"
+  }
+}

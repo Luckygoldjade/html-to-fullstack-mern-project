@@ -1,0 +1,4 @@
+mongodb+srv://<username>:<password>@cluster0.xxxxx.mongodb.net/<dbname>?retryWrites=true&w=majority
+PORT=3000
+
+## Replace <username>, <password>, and <dbname> with your actual database user and database name.
