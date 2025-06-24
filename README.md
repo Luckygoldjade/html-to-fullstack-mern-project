@@ -129,7 +129,7 @@ Make sure you have Node.js installed on your computer.
 Steps
 1. Open the project folder
 In VS Code or your file explorer, open the folder named:<br>
-Assignment_6-DOM manipulation with Random Staff
+Assignment_6-DOM_manipulation_with_Random_Staff
 
 2. Open a terminal
 In VS Code: Go to Terminal > New Terminal
@@ -145,7 +145,7 @@ This will install everything needed, including express and nodemon.
 Run:<br>
 npm start
 
-The app will start, and you can view it in your browser at:
+The app will start, and you can view it in your browser at:<br>
 http://localhost:3000
 
 Note:
@@ -164,7 +164,7 @@ Make sure you have Node.js installed on your computer.
 Steps
 1. Open the project folder
 In VS Code or your file explorer, open the folder named:<br>
-Assignment_7-Convert to React App
+Assignment_7-Convert_to_React_App
 
 2. Open a terminal
 In VS Code: Go to Terminal > New Terminal
@@ -180,7 +180,7 @@ This will install everything needed, including express and nodemon.
 Run:<br>
 npm start
 
-The app will start, and you can view it in your browser at:
+The app will start, and you can view it in your browser at:<br>
 http://localhost:3000
 
 Note:
@@ -236,7 +236,7 @@ npm install
 2. Start the Backend Server
 
 npm start
-- This will connect your backend to MongoDB Atlas using the connection string in .env.
+- This will connect your backend to MongoDB Atlas using the connection string in .env.<br>
 View the backend website
 - Open your web browser and go to https://localhost:3000
 
@@ -290,27 +290,27 @@ MONGODB_CONNECT_STRING=mongodb+srv://<username>:<password>@cluster0.xxxxx.mongod
 Two terminals will be open to install and run frontend and backend app separately.
 
 1. Install Dependencies
-Backend
-cd backend
-Open a terminal (Command Prompt or PowerShell on Windows). Terminal right.
+Backend<br>
+cd backend<br>
+Open a terminal (Command Prompt or PowerShell on Windows). Terminal right.<br>
 npm install
 
-Frontend
-cd ../frontend
-Open a terminal (Command Prompt or PowerShell on Windows). Terminal left.
+Frontend<br>
+cd ../frontend<br>
+Open a terminal (Command Prompt or PowerShell on Windows). Terminal left.<br>
 npm install
 
 2. Start the Backend Server
 
-cd ../backend
-npm start
-- This will connect your backend to MongoDB Atlas using the connection string in .env.
+cd ../backend<br>
+npm start<br>
+- This will connect your backend to MongoDB Atlas using the connection string in .env.<br>
 View the backend website
 - Open your web browser and go to https://localhost:3000
 
 3. Start the Frontend React App
 
-cd ../frontend
+cd ../frontend<br>
 npm start
 - This will run the React frontend at http://localhost:8000.
 
@@ -338,8 +338,8 @@ Notes
 
 
 ## GitHub Pages
-Assignment 6 is the last full HTML webpage before converting to React
-https://luckygoldjade.github.io/html-to-fullstack-mern-project/Assignment_6-DOM%20manipulation%20with%20Random%20Staff/public/index.html
+Assignment 6 is the last full HTML webpage before converting to React<br>
+https://luckygoldjade.github.io/html-to-fullstack-mern-project/Assignment_6-DOM_manipulation_with_Random_Staff/public/index.html
 
 ## What You Learned
 Developed a full-stack JavaScript application using the MERN stack (MongoDB, Express, React, Node.js).
