@@ -32,9 +32,8 @@ Educational Emphasis
 Designed for hands-on learning with clean separation of concerns between frontend, backend, and database.
 
 
-
 ## Tech Stack - Full-stack MERN application
-- Client-side rendering (SSR) with React
+- Client-side rendering (CSR) with React
 - Frontend: HTML, CSS, JavaScript, React
 - Backend: Node.js with Express, REST API
 - Database: MongoDB, Mongoose, No SQL
