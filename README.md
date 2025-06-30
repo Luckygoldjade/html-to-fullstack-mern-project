@@ -215,8 +215,8 @@ It already contains all the necessary settings and dependencies for this project
 - Go to Clusters > Connect > Connect your application.
 - Copy the connection string that looks like:
 
-mongodb+srv://<username>:<password>@cluster0.xxxxx.mongodb.net/<dbname>?retryWrites=true&w=majority
-- Replace <username>, <password>, and <dbname> with your actual database user and database name.
+mongodb+srv://`<username>`:`<password>`@cluster0.xxxxx.mongodb.net/`<dbname>`?retryWrites=true&w=majority
+- Replace `<username>`, `<password>`, and `<dbname>` with your actual database user and database name.
 
 6. Configure Your .env File
 - The connection string account and password are different from mongodb.com account and password.
@@ -224,7 +224,7 @@ mongodb+srv://<username>:<password>@cluster0.xxxxx.mongodb.net/<dbname>?retryWri
 - Copy dot_env_example and rename the copy to .env.
 - Open .env and paste your MongoDB connection string:
 
-MONGODB_CONNECT_STRING=mongodb+srv://<username>:<password>@cluster0.xxxxx.mongodb.net/<dbname>?retryWrites=true&w=majority
+MONGODB_CONNECT_STRING=mongodb+srv://`<username>`:`<password>`@cluster0.xxxxx.mongodb.net/`<dbname>`?retryWrites=true&w=majority
 - Never commit your .env file to Git or share it publicly.
 
 #### Running the Project
@@ -273,8 +273,8 @@ It already contains all the necessary settings and dependencies for this project
 - Go to Clusters > Connect > Connect your application.
 - Copy the connection string that looks like:
 
-mongodb+srv://<username>:<password>@cluster0.xxxxx.mongodb.net/<dbname>?retryWrites=true&w=majority
-- Replace <username>, <password>, and <dbname> with your actual database user and database name.
+mongodb+srv://`<username>`:`<password>`@cluster0.xxxxx.mongodb.net/`<dbname>`?retryWrites=true&w=majority
+- Replace `<username>`, `<password>`, and `<dbname>` with your actual database user and database name.
 
 6. Configure Your .env File
 - The connection string account and password are different from mongodb.com account and password.
@@ -282,7 +282,7 @@ mongodb+srv://<username>:<password>@cluster0.xxxxx.mongodb.net/<dbname>?retryWri
 - Copy dot_env_example and rename the copy to .env.
 - Open .env and paste your MongoDB connection string:
 
-MONGODB_CONNECT_STRING=mongodb+srv://<username>:<password>@cluster0.xxxxx.mongodb.net/<dbname>?retryWrites=true&w=majority
+MONGODB_CONNECT_STRING=mongodb+srv://`<username>`:`<password>`@cluster0.xxxxx.mongodb.net/`<dbname>`?retryWrites=true&w=majority
 - Never commit your .env file to Git or share it publicly.
 
 #### Running the Project
